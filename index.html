@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>AdoPet</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+
+    <!-- let us add bootstrap from getbootstrap website  -->
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- font awesome -->
+    <!-- https://kit.fontawesome.com/98d97ba858.js -->
+    <script src="https://kit.fontawesome.com/98d97ba858.js" crossorigin="anonymous"></script>
+    <!-- but to function our website for e.g the nav bar or other functionalities,
+  we have to add the javascript files, without these no functionalities will work-->
+    <!-- css is for style and appearance -->
+    <!-- javascript is for functionality -->
+    <!-- bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <section class="colored-section" id="title">
+        <div class="container-fluid">
+
+            <!-- Nav Bar -->
+
+            <nav class="navbar navbar-expand-lg navbar-dark">
+
+                <a class="navbar-brand" href="">Ad<i class="fas fa-paw"></i>Pet</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <!-- here in the href we'll put the id of the section
+                             where we want to navigate the user after clicking this button -->
+                            <a class="nav-link" href="#testimonials">Find a Pet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">Adopted Till Now</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cta">Download App</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+
+            <!-- Title -->
+            <!-- making the tilte section responsive by appying the propert of grid from bootstrap -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="big-heading">Adopt, Don't Shop.</h1>
+                    <p class="msg">
+                        “You decide your own level of involvement.” - Tyler Durden
+                    </p>
+                    <!-- we  have used <i class="fab fa-apple"> i.e btn logo from fontawesome.com and we can see that they have used i tag -->
+                    <!-- bcz a/c to them the smallest tag which can fullfill this recquirement is i tag -->
+                    <!-- you can use span as well as -->
+                    <button type="button" class="btn btn-lg btn-dark download-button"><i class="fab fa-apple"></i> Download</button>
+                    <!-- the code for button icon should be placed outside the button elemenet -->
+                    <button type="button" class="btn btn-lg btn-outline-light  download-button"><i class="fab fa-google-play"></i>Download</button>
+
+                </div>
+
+                <div class="col-lg-6">
+                    <img class="title-image" src="images/c1.jpg" alt="iphone-mockup">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Features -->
+
+    <section class="white-section" id="features">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="features-box col-lg-4 col-md-12">
+                    <i class="icon fas fa-home fa-4x"></i>
+                    <h3 class="feature-title">Give Family</h3>
+                    <p>You can give a family and a home to a living being.</p>
+                </div>
+                <div class="features-box col-lg-4 col-md-12">
+                    <i class="icon fas fa-heart fa-4x"></i>
+                    <h3 class="feature-title">Save Life.</h3>
+                    <p>You can save a life by adopting a homeless animal, and by giving the life which every living being deserve</p>
+                </div>
+                <div class="features-box col-lg-4 col-md-12">
+                    <i class="icon fas fa-ban fa-4x"></i>
+                    <h3 class="feature-title">Stop Cruelty Towards Animals.</h3>
+                    <p>You can stop cruelty towards animals by adopting them it will minimize the illegal practice of breeding for the sole purpose of maximising profit, without any regard to their health or wellbeing.</p>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Testimonials -->
+
+    <section class="colored-section" id="testimonials">
+        <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active container-fluid">
+                    <h2 class="testimonial-text">This is Taara, a female pup, she loves to play.</h2>
+                    <img class="testimonial-image" src="images/d6.jpg" alt="dog-profile">
+                    <em>Taara, India</em>
+                </div>
+                <div class="carousel-item container-fluid">
+                    <h2 class="testimonial-text">This is kabira, a baby male cat.</h2>
+                    <img class="testimonial-image" src="images/c2.jpeg" alt="lady-profile">
+                    <em>Kabira, India</em>
+                </div>
+                <div class="carousel-item container-fluid">
+                    <h2 class="testimonial-text">This is Baalu, a male pup.</h2>
+                    <img class="testimonial-image" src="images/d5.jpg" alt="lady-profile">
+                    <em>Baalu, India</em>
+                </div>
+                <div class="carousel-item container-fluid">
+                    <h2 class="testimonial-text">This is Batuk, a male pup.</h2>
+                    <img class="testimonial-image" src="images/d4.jpg" alt="lady-profile">
+                    <em>Batuk, India</em>
+                </div>
+                <div class="carousel-item container-fluid">
+                    <h2 class="testimonial-text">This is Khagru, a male Rabbit.</h2>
+                    <img class="testimonial-image" src="images/khagru.jpg" alt="lady-profile">
+                    <em>Khagru, India</em>
+                </div>
+
+                <div class="carousel-item container-fluid">
+                    <h2 class="testimonial-text">This is Kirti, a female rabbit.</h2>
+                    <img class="testimonial-image" src="images/kirti.jpg" alt="lady-profile">
+                    <em>Kirti, India</em>
+                </div>
+                <div class="carousel-item container-fluid">
+                    <h2 class="testimonial-text">This is Champak, a male baby cat .</h2>
+                    <img class="testimonial-image" src="images/c5.jpg" alt="lady-profile">
+                    <em>Champak, India</em>
+                </div>
+
+
+            </div>
+            <a class="carousel-control-prev" role="button" href="#testimonial-carousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+
+            <a class="carousel-control-next" role="button" href="#testimonial-carousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+
+            </a>
+        </div>
+
+
+
+
+
+
+    </section>
+
+
+    <!-- Press -->
+
+    <!--<section class="colored-section" id="press">
+        <img class="press-logo" src="images/TechCrunch.png" alt="tc-logo">
+        <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+        <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+        <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+    </section> -->
+
+
+    <!-- Pricing -->
+    <!-- we are creating card to store the price and information of breeds -->
+    <section class="white-section" id="pricing">
+
+        <h2 class="section-heading">Pets Which Got Adopted</h2>
+        <p>Many have got their homes, help others in finding theirs.</p>
+        <!-- card deck wraps al of them in equal size but it is not adaptable as bootstrap other sections -->
+        <!-- <div class="card-deck"> -->
+        <!-- so we will use row instead of deck -->
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Dogs</h3>
+                    </div>
+
+                    <div class="card-body">
+                        <h2 class="price-text">350 adopted</h2>
+                        <p>20 are in waiting list</p>
+                        <p>289 are still here, waiting for you</p>
+                        <br>
+                        <button type="button" class="btn btn-lg btn-block btn-outline-dark">Adopt</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Cats</h3>
+                    </div>
+
+                    <div class="card-body">
+                        <h2 class="price-text">120 adopted</h2>
+                        <p>8 are in waiting list</p>
+                        <p>97 are still here, waiting for you</p>
+                        <br>
+                        <button type="button" class="btn btn-lg btn-block btn-dark">Adopt</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Other Animals and Birds</h3>
+                    </div>
+
+                    <div class="card-body">
+                        <h2 class="price-text">82 adopted</h2>
+                        <p>Total 35 other animals are in waiting list</p>
+                        <p>193 are still here, waiting for you</p>
+                        <br>
+                        <button type="button" class="btn btn-lg btn-block btn-dark">Adopt</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- Call to Action -->
+
+    <section class="colored-section" id="cta">
+        <div class="container-fluid">
+            <!-- "In a gentle way, you can shake the world." - Mahatma Gandhi. -->
+            <h3 class=big-heading>"You can't buy a real friend, but you can adopt one."</h3>
+            <button type="button" class="btn btn-lg btn-dark download-button"><i class="fab fa-apple"></i> Download</button>
+            <!-- the code for button icon should be placed outside the button elemenet -->
+            <button type="button" class="btn btn-lg btn-outline-light  download-button"><i class="fab fa-google-play"></i>Download</button>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer class="white-section" id="footer">
+        <div class="container-fluid">
+            <i class="social-icon fab fa-instagram" onclick="location.href='https://www.instagram.com/swaraj_2707/'"></i>
+            <i class="social-icon fab fa-linkedin" onclick="location.href='https://www.linkedin.com/in/swaraj-singh-844769126/'"></i>
+            <p>© Copyright 2023 | AdoPet.com</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
