@@ -161,6 +161,10 @@ p {
     margin: 20px 10px;
 }
 
+.social-icon:hover {
+    color: #A3A847;
+}
+
 /* media query breakpoint for responsiveness */
 /* go on your codeply notes for more information */
 /* i will implement it for different size of screen */
