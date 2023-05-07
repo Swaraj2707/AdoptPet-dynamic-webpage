@@ -1,0 +1,178 @@
+body {
+    font-family: "Montserrat-light", sans-serif;
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    color: #8f8f8f;
+}
+
+/* headings */
+.big-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.section-heading{
+    font-size : 3rem;
+    line-height:1.5;
+}
+
+/* containers */
+.container-fluid {
+    padding: 7% 15%;
+}
+
+/* sections */
+
+.colored-section{
+    background-color: #A3A847;
+    color: #fff;
+}
+
+.white-section{
+    background-color: #fff;
+}
+
+.navbar {
+    /* padding up, left and right, bottom */
+    padding: 0 0 4.5rem;
+}
+
+/* Navigation bar font change*/
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* padding in bottom of nav bar */
+.nav-item {
+    padding: 0 18px;
+}
+
+/* making elements of nav bar large and light */
+.nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat-light";
+}
+
+/* creating spaces between download  buttons */
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+.msg{
+    color : black;
+}
+
+/* title-section */
+#title{
+    text-align: left;
+}
+/* in order to target id we put # sign in front*/
+
+    /* background-color : #A3A847; */
+    /* we are changing the color of h1 in title because, h1 resides in title and if   */
+    /* later on if we want to create some subtitles and other infomration then that
+     will also remain White if we define color of the whole title box  */
+
+
+/* to choose any class of same names particularly, what we can do is */
+/* implementing padding of 3% 15% 7% for the container class that is inside the title section */
+#title .container-fluid{
+    padding : 3% 15%;
+}
+
+.title-image {
+    width: 50%;
+    /* rotate the image using transform property */
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+}
+
+/* features section */
+#features {
+
+    position: relative;
+    /* you don't even need to write to z index now */
+    /* z-index : 1; */
+}
+
+.feature-title{
+    font-size: 1.5rem;
+}
+.features-box {
+    padding: 5%;
+}
+
+.icon {
+    color: #064420;
+    margin-bottom: 1rem;
+}
+
+/* change the hover state of icons */
+.icon:hover {
+    color: #A3A847;
+}
+
+/* testimonial section */
+#testimonials {
+    background-color: #064420;
+}
+.testimonial-text{
+    font-size : 3rem;
+    line-height:1.5;
+}
+.testimonial-image {
+    width: 25%;
+    border-radius: 60%;
+    margin: 20px;
+}
+
+
+#press {
+    background-color: #064420;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/* pricing section */
+#pricing {
+    padding: 100px;
+    /* center the text inside cards */
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
+
+
+.social-icon {
+    margin: 20px 10px;
+}
+
+/* media query breakpoint for responsiveness */
+/* go on your codeply notes for more information */
+/* i will implement it for different size of screen */
+@media (max-width : 1024px) {
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+}
+
+/* ------------------------------------------------------------------------ */
